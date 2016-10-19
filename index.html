@@ -1,10 +1,72 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Cooking Converter</title>
   </head>
   <body>
     <h1>Cooking Converter</h1>
-    <script src="js/scripts.js"></script>
+    <table>
+      <tr>
+        <td>
+          <form class="galToLitForm">
+            <label for="galToLit">Gallons to Liters</label>
+            <input type="text" id="galToLit">
+            <button type="submit">Submit</button>
+          </form>
+        </td>
+        <td class="output">
+          <div>
+            <p class="galToLit"></p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <form class="litToGalForm">
+            <label for="litToGal">Liters To Gallons</label>
+            <input type="text" id="litToGal">
+            <button type="submit">Submit</button>
+          </form>
+        </td>
+        <td class="output">
+          <div>
+            <p class="litToGal"></p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <form class="peckToBushForm">
+            <label for="peckToBush">Pecks To Bushels</label>
+            <input type="text" id="peckToBush">
+            <button type="submit">Submit</button>
+          </form>
+        </td>
+        <td class="output">
+          <div>
+            <p class="peckToBush"></p>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <form class="bushToPeckForm">
+            <label for="bushToPeck">Bushels To Pecks</label>
+            <input type="text" id="bushToPeck">
+            <button type="submit">Submit</button>
+          </form>
+        </td>
+        <td class="output">
+          <div>
+            <p class="bushToPeck"></p>
+          </div>
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

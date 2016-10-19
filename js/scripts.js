@@ -14,5 +14,29 @@ var bushelToPeck = function(bushels) {
   return bushels * 4;
 };
 
-var input = prompt("how many units do you have?");
-alert("Here you go... Gallons to liters: " + gallonToLiter(input) + " Liters to gallons: " + literToGallon (input) + " Pecks to bushels: " + peckToBushel (input) + " Bushels to pecks: " + bushelToPeck (input));
+$(document).ready(function() {
+  $(".galToLitForm").submit(function(event) {
+    var galToLit = $("#galToLit").val();
+    $(".galToLit").text(gallonToLiter(galToLit));
+
+    event.preventDefault();
+  });
+  $(".litToGalForm").submit(function(event) {
+    var litToGal = $("#litToGal").val();
+    $(".litToGal").text(literToGallon(litToGal));
+
+    event.preventDefault();
+  });
+  $(".peckToBushForm").submit(function(event) {
+    var peckToBush = $("#peckToBush").val();
+    $(".peckToBush").text(peckToBushel(peckToBush));
+
+    event.preventDefault();
+  });
+  $(".bushToPeckForm").submit(function(event) {
+    var bushToPeck = $("#bushToPeck").val();
+    $(".bushToPeck").text(bushelToPeck(bushToPeck));
+
+    event.preventDefault();
+  });
+});
